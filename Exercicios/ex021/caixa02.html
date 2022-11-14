@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupping tags</title>
+    <!--Tags de agrupamento são utilizadas para agrupar informações semanticamente-->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightblue;
+            margin: 0px;
+        }
+        header{
+            background-color: white;           
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.400);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 30px;            
+        }
+        nav > a:hover{
+            text-decoration: underline;            
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.400); 
+        }
+        article{
+            background-color: lightcyan;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(169, 189, 189);
+        }
+        footer{
+            background-color: black;
+            color: white;           
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--Header tem função de cabeçalho-->
+    <header>
+        <h1>Meu Site</h1>
+        <!--nav tem função de navegação, podendo incluir ancoras para outras páginas internas ou externas-->
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <!--main utilizado para todo o contéudo principal, podendo ser separado por seções e conter artigos-->
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política e Tecnologia</p>
+        </section>
+        <section id="noticias">            
+            <!--article são utilizados para contéudos específicos (artigos)-->
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deleniti impedit quis, reiciendis, autem eveniet sunt veritatis fugiat, odit sed dicta eos laboriosam obcaecati recusandae! Quibusdam excepturi nisi numquam ex.</p>
+                <!--aside é utilizado para descrever informações periféricas de um artigo-->
+                <aside>Artigo escrito por Fulano de Tal</aside>
+            </article>
+        </section>
+    </main>
+    <!--footer são utilizados para inclusão de informações de rodapé-->
+    <footer>
+        <p>Desenvolvido pelo Curso em Video</p>
+    </footer>
+</body>
+</html>

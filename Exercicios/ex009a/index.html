@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito na linguagem JavaScript. <br>
+    Porém ele não mantem a identação</p>
+    <pre>
+        <code>
+            num = int(input("Digite um número:"))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR')
+            else:
+                print(f'O numero {num} é IMPAR)
+            print('Fim do programa')
+        </code>
+    </pre>
+    <p>A tag pre mantem identação, espaçamento, quebra de linha, etc. Como se fosse um editor de texto</p>
+    <h2>Citações simples</h2>
+    <p>Como dizia o pai de um amigo: <q>O computador é um burro muito rápido</q> <br>
+       A tag q (quotation) permite criar as aspas de uma citação mas com valor semântico</p> 
+    
+    <h2>Citações completas</h2>    
+    <p>O bloco de citação blockquote é utilizado para apresentar uma citação completa na forma de um texto longo com identação e formatação diferenciada. Por exemplo: segundo o autor Mauricio Samy Silva (2015)</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">
+        Como qualquer idioma, a HTML também tem suas regras de sintaxe e escrita, e um arquivo escrito em conformidade com essas regras consiste-se na chamada marcação ou estrutura HTML.
+    </blockquote>
+    <p>A tag blockquote também permite inserir um parâmetro "cite". Apesar de não funcionar como um hiperlink para a citação ele permite a estrutura interna e aos mecanismos de busca</p>
+    <h2>Abreviações</h2>
+    <p>A tag abbr é utilizada para descrever abreviações como por exemplo <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <h2>Texto invertido</h2>
+    <p>A tag bdo serve para criar textos espelhados por exemplo: <br>
+        Orientação esquerda para direita <bdo dir="ltr">Paulo César Normandia</bdo> <br> 
+        Orientação direita para a esquerda <bdo dir="rtl">Paulo César Normandia</bdo></p>
+</body>
+</html>

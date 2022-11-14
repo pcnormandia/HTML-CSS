@@ -1,0 +1,31 @@
+a:link, a:visited, a:hover, a:active {
+	color: #383838;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a:focus { 
+    outline: none; 
+}
+
+.panel-item {
+	text-align: left;
+	margin: 0;
+	padding: 5px 10px;
+}
+
+.panel-item:not(:last-child) {
+	border-bottom: 1px solid #b2aeaa;
+}
+
+.panel-item-icon {
+	width: 12px;
+	height: 12px;
+	margin: 0px 5px 0px 0px;
+}
+
+a::-moz-focus-inner {
+    outline: 0;
+    border: 0;
+    padding: 0;
+}

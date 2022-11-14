@@ -1,0 +1,22 @@
+{
+   "modifications":[
+     {
+         "type":"append",
+         "selector":"body",
+         "content":"<style id=\"youtube-download-style\" type=\"text\/css\">#youtube-download-panel button::-moz-focus-inner {outline: 0;border: 0;padding: 0;} #youtube-download-button::-moz-focus-inner {outline: 0;border: 0;padding: 0;} #youtube-download-button {border-radius: 2px;} .ytd-plus-button {position:relative;top:4px;background-image:url('##download-icon-url##');background-repeat:no-repeat;background-position:left 2px center;height:35px;margin:0 0 0 15px;padding:0 8px 0 25px;background-color:rgb(204, 0, 0);border:none;margin:0 0 0 15px;font-family: \"Roboto\", \"Noto\", sans-serif;font-weight: 500;text-transform:uppercase;color:rgb(255,255,255);font-size:12px;cursor:pointer;} .ytd-plus-panel {min-width:69px;display:none;position:absolute;top:0;left:0;z-index:99999;background-color:white;padding:10px 0;box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)} .ytd-plus-ul {list-style-type:none;padding:0;} .ytd-plus-ul button {width:100%;text-align:left;background-color:white;border:none;padding:15px 15px;font-size:12px;cursor:pointer;} .ytd-plus-ul button:hover {background-color:#eeeeee;}<\/style>",
+         "content_id":"youtube-download-style"
+      },
+      {
+         "type":"append",
+         "selector":"#info-contents #container #info",
+         "content":"<button id=\"youtube-download-button\" class=\"ytd-plus-button\" type=\"button\">##download##<\/button>",
+         "content_id":"youtube-download-button"
+      },
+      {
+         "type":"append",
+         "selector":"body",
+         "content":"<div id=\"youtube-download-panel\" class=\"ytd-plus-panel\"><ul class=\"ytd-plus-ul\"><li id=\"li-download-mp4\"><button type=\"button\"><span id=\"download-mp4\" class=\"yt-ui-menu-item-label\">Download MP4<\/span><\/button><\/li><li id=\"li-download-mp3\"><span><button type=\"button\"><span id=\"download-mp3\">Download MP3<\/span><\/button><\/span><\/li><li id=\"li-download-other\"><span><button type=\"button\"><span id=\"download-other\">##download_other_formats##<\/span><\/button><\/span><\/li><\/ul><\/div>",
+         "content_id":"youtube-download-panel"
+      }
+   ]
+}

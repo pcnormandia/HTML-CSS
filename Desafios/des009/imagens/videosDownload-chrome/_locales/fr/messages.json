@@ -1,0 +1,15 @@
+{
+  "test": {
+    "message": "test"
+  },
+  "download_other_formats": {
+    "message": "Télécharger d'autres formats audio"
+  },
+  "download_other_videos": {
+    "message": "Télécharger la vidéo"
+  },
+  "download": {
+    "message": "Télécharger"
+  }
+
+}
