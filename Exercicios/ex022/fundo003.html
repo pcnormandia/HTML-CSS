@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento de imagens de fundo</title>
+    <!--Módulo 03 capitulo 19 aula 04
+    Como alterar o posicionamento de imagens de fundo em um site-->
+    <style>
+        div.bloco{
+            background-image: url('imagens/wallpaper002.jpg');
+            height: 200px;
+            border: 2px solid black;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        div#q1{
+            background-position: left top;
+        }
+        div#q2{
+           background-position: center left; 
+        }
+        div#q3{
+            background-position: right bottom;
+        }
+        div#q4{
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco" id="q1"></div>
+    <div class="bloco" id="q2"></div>
+    <div class="bloco" id="q3"></div>
+    <div class="bloco" id="q4"></div>
+</body>
+</html>
