@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+<!--O Alinhamento vertical pode ser obtido através dos seguintes passos: 
+01) definir as configurações básicas de tamanho, cor, padding, height do container e conteúdo
+02) estabelecer position relative do container e position absolute do conteúdo
+03) estabelecer para o contéudo o posicionamento de 50% do centro do container
+04) Utilizar o método transform combinado com a função translate para deslocar a posição atual relativa-->
+
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+        }
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            background-color: yellow;
+            position: absolute;            
+            height: 200px;
+            width: 400px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);            
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
