@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <!--Mudando o tamanho da imagem de fundo do site-->
     <style>
         body{
@@ -14,10 +14,19 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            /*Ordem do shorthand para background
+            color> image> position> repeat> (size)> attachment
+            NOTA: segundo a especificação do W3C o size faz parte da especificação. Entretanto não está funcionando.
+            Por isso é necessário utiliza-lo separadamente.
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+            */
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +37,11 @@
 <body>
    <main>
     <h1>Teste de imagem de fundo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non magnam nulla voluptas nam eligendi temporibus necessitatibus fuga ab quisquam. Neque, nobis fugiat numquam distinctio laborum doloribus iste magni eligendi suscipit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem at nostrum vero quae? Adipisci a fugiat, deleniti exercitationem amet asperiores natus labore sit facere voluptatem saepe eligendi. Tenetur, asperiores nemo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi minima ad debitis. Vero modi tempore pariatur consequuntur rerum voluptates, iusto sapiente sequi, voluptate perspiciatis aut dolor minima voluptatem, rem ducimus.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non magnam nulla voluptas nam eligendi temporibus necessitatibus fuga ab quisquam. Neque, nobis fugiat numquam distinctio laborum doloribus iste magni eligendi suscipit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem at nostrum vero quae? Adipisci a fugiat, deleniti exercitationem amet asperiores natus labore sit facere voluptatem saepe eligendi. Tenetur, asperiores nemo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi minima ad debitis. Vero modi tempore pariatur consequuntur rerum voluptates, iusto sapiente sequi, voluptate perspiciatis aut dolor minima voluptatem, rem ducimus.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non magnam nulla voluptas nam eligendi temporibus necessitatibus fuga ab quisquam. Neque, nobis fugiat numquam distinctio laborum doloribus iste magni eligendi suscipit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem at nostrum vero quae? Adipisci a fugiat, deleniti exercitationem amet asperiores natus labore sit facere voluptatem saepe eligendi. Tenetur, asperiores nemo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi minima ad debitis. Vero modi tempore pariatur consequuntur rerum voluptates, iusto sapiente sequi, voluptate perspiciatis aut dolor minima voluptatem, rem ducimus.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non magnam nulla voluptas nam eligendi temporibus necessitatibus fuga ab quisquam. Neque, nobis fugiat numquam distinctio laborum doloribus iste magni eligendi suscipit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem at nostrum vero quae? Adipisci a fugiat, deleniti exercitationem amet asperiores natus labore sit facere voluptatem saepe eligendi. Tenetur, asperiores nemo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi minima ad debitis. Vero modi tempore pariatur consequuntur rerum voluptates, iusto sapiente sequi, voluptate perspiciatis aut dolor minima voluptatem, rem ducimus.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non magnam nulla voluptas nam eligendi temporibus necessitatibus fuga ab quisquam. Neque, nobis fugiat numquam distinctio laborum doloribus iste magni eligendi suscipit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem at nostrum vero quae? Adipisci a fugiat, deleniti exercitationem amet asperiores natus labore sit facere voluptatem saepe eligendi. Tenetur, asperiores nemo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi minima ad debitis. Vero modi tempore pariatur consequuntur rerum voluptates, iusto sapiente sequi, voluptate perspiciatis aut dolor minima voluptatem, rem ducimus.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non magnam nulla voluptas nam eligendi temporibus necessitatibus fuga ab quisquam. Neque, nobis fugiat numquam distinctio laborum doloribus iste magni eligendi suscipit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem at nostrum vero quae? Adipisci a fugiat, deleniti exercitationem amet asperiores natus labore sit facere voluptatem saepe eligendi. Tenetur, asperiores nemo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi minima ad debitis. Vero modi tempore pariatur consequuntur rerum voluptates, iusto sapiente sequi, voluptate perspiciatis aut dolor minima voluptatem, rem ducimus.</p>
    </main> 
 </body>
