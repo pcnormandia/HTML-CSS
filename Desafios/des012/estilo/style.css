@@ -14,11 +14,13 @@
 
 * {
     margin: 0px;
-    padding: 0px;  
+    padding: 0px; 
+    font-size: 1em; 
 }
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte01);
 }
 a{
     text-decoration: none;
@@ -36,11 +38,13 @@ header{
     text-align: center;
 }
 header > h1{
-    padding-top: 50px;
+    padding-top: 30px;
     font-variant: small-caps;
+    font-family: var(--fonte02);
+    font-size: 5vw;
 }
 header > p{
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 /*Configurações do main*/
@@ -49,6 +53,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte03);
+    font-size: 2vw;
 }
 section.normal{
     background-color: white;
@@ -59,7 +65,8 @@ section.imagem{
     color: white;
 }
 section.imagem > p{
-    width: 350px;
+    display: inline-block;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -70,5 +77,5 @@ footer{
     color: white;
     font-weight: bold;
     text-align: center;
-    padding: 10px;
+    padding: 10px;    
 }
