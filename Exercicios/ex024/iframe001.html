@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe e HTML</title>
+</head>
+<body>
+    <h1>Testanto o uso de iframe</h1>
+    <!--O uso do iframe permite criar uma nova instância do navegador para acesso à outro documento HTML externo dentro do seu site HTML-->
+    <p>Acessando o site do <a href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a> via hiperlink utilizando a tag a</p>
+    <br>
+    <p>Acessando o site do Curso em Video via iframe <iframe src="https://www.cursoemvideo.com" frameborder="0">
+        <a href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a>
+    </iframe></p>
+    <br>
+    <p>Por motivos de segurança alguns sites não permitem o uso do iframe, por exemplo o Google <iframe src="https:www.google.com.br" frameborder="0"></iframe></p>
+    
+    <h1>Configurando iframe</h1>
+    <!--Quando o dispositivo não for compatível com iframe é possível colocar uma mensagem ou hyperlink dentro das tags <iframe>Mensagem ou hiperlink</iframe>-->
+    <p>Acessando o repositório de Paulo Normandia
+        <iframe src="https://github.com/pcnormandia" frameborder="0">
+            no git hub<a href="https://github.com/pcnormandia" target="_blank">clique aqui para acessar o repositório</a>
+        </iframe>
+    </p>
+    
+    <h1>Configurando </h1>
+    <!--O tamanho padrão é 300x150px, porém pode ser configurado utilizando os atributos height e width-->
+    <p><iframe src="https://www.cursoemvideo.com" frameborder="0" width="500px" height="500px"></iframe></p>
+    
+</body>
+</html>
