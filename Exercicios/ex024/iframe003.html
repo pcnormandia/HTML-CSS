@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegando no iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;            
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navegação no iframe</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum ut iusto velit maiores veritatis at hic nulla sint cupiditate beatae natus error id dolore mollitia, animi aliquam adipisci ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, fuga. Eligendi id suscipit quae quam ut illum, nulla ipsam, necessitatibus sequi, velit tenetur hic culpa eos ab aliquam assumenda? Deserunt!</p>
+    <ul>
+        <!--Para a navegação e exibição no iframe é preciso criar ancoras para os arquivos desejados e no atributo target declarar o nome do iframe-->
+        <li><a href="extras/index.html" target="frame">Index</a></li>
+        <li><a href="extras/pagina01.html" target="frame">Pagina 01</a></li>
+        <li><a href="extras/pagina02.html" target="frame">Página 02</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum ut iusto velit maiores veritatis at hic nulla sint cupiditate beatae natus error id dolore mollitia, animi aliquam adipisci ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, fuga. Eligendi id suscipit quae quam ut illum, nulla ipsam, necessitatibus sequi, velit tenetur hic culpa eos ab aliquam assumenda? Deserunt!</p>
+    <!--Criar um name para o iframe é fundamental. O id ou o class só são necessários para configurações em css3
+    Para criar um conteúdo estático inicial (default) utiliza-se o atributo srcdoc e dentro deste pode ser colocado qualquer conteúdo ou imagem ou combinação destes-->
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum ut iusto velit maiores veritatis at hic nulla sint cupiditate beatae natus error id dolore mollitia</p> <img src='imagens/desenhos0156.jpg'>" ></iframe>
+</body>
+</html>
