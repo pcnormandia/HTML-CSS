@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de formulários</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="idnome">Nome:</label>
+            <input type="text" name="nnome" id="idnome" required maxlength="30" placeholder="Digite o nome completo" autocomplete="name" size="20">
+        </p>
+        <p>
+            <label for="idmedia">Média:</label>
+            <input type="number" name="nmedia" id="idmedia" required maxlength="2" placeholder="0 a 10" min="0" max="10" step="0.1">
+        </p>
+        <p>
+            <!--O atributo value define um valor default que pode ser definido manualmente ou via programação-->
+            <label for="iddata">Data da prova:</label>
+            <input type="date" name="ndata" id="iddata" value="2022-11-23">
+        </p>
+        <p>
+            <label for="idhora">Hora da prova:</label>
+            <input type="time" name="nhora" id="idhora" value="14:00">
+        </p>
+        <p>            
+            <label for="idmes">Periodo letivo:</label>
+            <input type="month" name="nmes" id="idmes" value="2022-11">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
