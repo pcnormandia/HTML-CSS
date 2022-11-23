@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--
+    O atributo required define que o preenchimento do objeto input é obrigatório.
+    Os atributos max-lenght e min-lenght estabelece os comprimentos máximo e mínimo.
+    O atributo size define um tamanho máximo visivel. Se houver mais caracteres possíveis, surge uma rolagem lateral. 
+    O atributo placeholder estabelece um texto provisório que irá aparecer no input.
+    O atributo autocomplete em form tem as opções on/off e em input tem diversas opções com funções semânticas-->
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="idusuario">Usuário</label>
+            <input type="text" name="nusuario" id="idusuario" required minlength="5" maxlength="15" size="15" placeholder="minímo 5 caracteres" autocomplete="username">
+        </p>
+        <p>
+            <label for="idsenha">Senha</label>
+            <input type="password" name="nsenha" id="idsenha" required minlength="8" maxlength="20" size="15" placeholder="mínimo 8 caracteres" autocomplete="current-password"> 
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
