@@ -12,11 +12,22 @@
     </style>
 </head>
 <body>
-    <!--Formulário simples utilizando a tag form combinada com input (inserção dos dados) e inclusão do botão input submit-->
+    <!--Formulário simples utilizando a tag form combinada com input (inserção dos dados) e inclusão do botão input submit
+    O atributo action define o arquivo ou função que será executada. O atributo autocomplete define se os dados digitados uma vez ficarão disponíveis para serem digitados novamente -->
+    
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome <input type="text" name="sobrenome" id="sobrenome"></p>
+    <!--O método get é utilizado como padrão para envio de formulário. Quando os dados não são sensíveis e no limite de 3000 Bytes. 
+        Por outro lado o método post é utilizado como alternativa para envio de dados sensíveis (combinado com HTTPS), imagens e fotos, não ficar visivel na URL,  -->
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <!--Para a linguagem php todo objeto de entrada (input) deve ter um nome (name).
+            Para a linguagem HTML o nome é também muito útil.
+            Para a linguagms JavaScript é utilizado automaticamente o id do input -->
+        <!--O tag label é utilizado para criar uma ligação com o seu objeto (input) através do id. 
+            Permite gerar valor semântico a essa relação facilitando a indexação dos mecanismos de busca-->        
+            <p><label for="idnome">Nome:</label> 
+            <input type="text" name="nome" id="idnome"></p>        
+            <p><label for="idsobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="idsobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 
