@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário select datalist e textarea</h1>
+    <!--Devido ao uso do campo textarea que pode conter uma grande quantidade de dados, o ideal é utilizar o method post (limite 3000 Bytes)-->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="idest">Estado</label>
+            <!--A tag select permite criar uma caixa de opções, porém é preciso definir as opções utilizando a tag option-->
+            <select name="estado" id="idest">
+                <!--A tag optgroup cria um grupo de opções por agrupamento de tags option.
+                    O atributo label permite denominar esse grupo de opções. Entretanto ele não é um item selecionavel.
+                    O atributo selected define a opção pré-definida-->
+                    <option value="" selected>---Escolha---</option>
+                    <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>  
+                <optgroup label="Região Centro-oeste">
+                    <option value="GO">Góias</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="TO">Tocantis</option>
+                    <option value="AM">Mato Grosso</option>
+                </optgroup>   
+            </select>
+        </p>
+        <p>
+            <!--A tag datalist permite definir uma lista de opções dentro de uma tag input utilizando o atributo list-->
+            <label for="idprof">Profissão:</label>
+            <input type="text" name="nprof" id="idprof" list="idlist" placeholder="Escolha na lista ou digite...">
+            <datalist id="idlist">
+                <option value="dev">Desenvolvedor</option>
+                <option value="prog">Programador</option>
+                <option value="anal">Analista de Sistemas</option>
+                <option value="engsoft">Engenheiro de Software</option>
+                <option value="engcomp">Engenheiro de computação</option>
+                <option value="cie">Cientista de Computação</option>                
+            </datalist>
+        </p>
+        <p>
+            <!--A tag textarea permite definir um campo para inclusão de comentários ou mensagens.
+            Os atributos cols e rows não estabelecem os limites de caracteres, apenas o tamanho da área que será visível-->
+            <label for="idmsg">Mensagem:</label><br>
+            <textarea name="nmsg" id="idmsg" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">            
+        </p>
+    </form>
+</body>
+</html>
