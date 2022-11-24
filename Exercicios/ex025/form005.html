@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Checkbox e radio</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!--O controle radio é utilizado quanto se deseja marcar opções. Quanto for possível marcar apenas uma das opções o name deve ser o mesmo para as opções e os ids devem ser diferentes. Caso contrário será possível marcar mais de uma opção
+        O atributo checked é utilizado para definir uma opção inicial para o usuário. No caso do controle radio o último checked prevalece.
+        -->
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="nsexo" id="idsexmasc" value="M" checked><label for="idsexmasc">Masculino</label>
+            <input type="radio" name="nsexo" id="idsexfemi" value="F"><label for="idsexfemi">Feminino</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="nfute" id="idfute" checked><label for="idfute">Futebol</label> <br>
+            <input type="checkbox" name="nbasq" id="idbasq"><label for="idbasq">Basquete</label> <br>
+            <input type="checkbox" name="nnata" id="idnata"><label for="idnata">Natação</label> <br>
+            <input type="checkbox" name="nteni" id="idteni"><label for="idteni">Tenis</label> <br>
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
