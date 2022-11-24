@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Testes com input para color, range e file</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="idcor">Cor</label>
+            <input type="color" name="ncor" id="idcor" value="#00ff00">
+        </p>
+        <p>
+            <label for="idsat">Nível de satisfação</label>
+            <input type="range" name="nsat" id="idsat" min="1" max="10" step="1" value="10">
+        </p>
+        <p>
+            <!--O controle input do tipo file precisa ser utilizado com o método get (form).-->
+            <label for="idarq">Arquivo</label>
+            <input type="file" name="narq" id="idarq">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
