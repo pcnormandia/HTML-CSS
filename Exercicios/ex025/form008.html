@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exercicios de formulários - output</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="idnum1">Número 1:</label>
+            <input type="number" name="nnum1" id="idnum1" min="1" max="50" required oninput="idsoma.innerHTML = Number(idnum1.value) + Number(idnum2.value)">
+        </p>
+        <p>
+            <label for="idnum2">Número 2:</label>
+            <input type="number" name="nnum2" id="idnum2" required oninput="idsoma.innerHTML = Number(idnum1.value) + Number(idnum2.value)">
+        </p>
+        <p>
+            <label for="idsoma">Soma:</label>
+            <output name="soma" id="idsoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
