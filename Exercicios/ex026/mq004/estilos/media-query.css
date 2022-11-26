@@ -1,3 +1,80 @@
 @charset "UTF-8";
 
 /*Folha de estilo para todas as outras medias*/
+
+/*Typical device breakpoints - recomendações da W3C
+Pequenas telas: até 600px
+Smartphone: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+grandes telas: acima de 1200px
+
+As configurações (abaixo) para pequenas telas e smartphone não são necessárias uma vez que as configurações de estilo inicialmente utilizaram o conceito mobile first. Por isso, criaremos folhas de estilo apenas para resoluções acima de 768px.
+
+@media screen and (max-width: 600px) {}
+@media screen and (min-width: 600px) and max-width: 768px) {}
+*/
+
+@media print{ 
+    /*Configuração de background-image é desnecessária uma vez que não imprime imagem de fundo*/
+    body{
+        background-image: url("../imagens/back-print.jpg");        
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#printer{display: block;}
+    
+    /*Tipo de fonte mais adequada para impressão*/
+    *{
+        font-family: 'Courier New', Courier, monospace;        
+    }
+    
+    /*Borda para melhoria estética*/
+    main {
+        border: 2px solid black;
+    }
+    
+    /*Cor da fonte mais adequada para impressão*/
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    /*Mensagem opcional*/
+    main::after{
+        content: "Configuração de folha de estilo para impressora";
+        text-decoration: overline;
+    }
+}
+/*Configurações de estilo para Tablet*/
+@media screen and (min-width:768px) and (max-width:992px) {
+    body{
+        background-image: url("../imagens/back-tablet.jpg");
+    }
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#printer{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+/*Configurações de estilo para Desktop*/
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body{
+        background-image: url("../imagens/back-pc.jpg");
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#printer{display:none}
+    img#pc{display: block;}
+    img#tv{display: none;}
+}
+/*Configurações de estilo para Telas grandes*/
+@media screen and ( min-width:1200px) {
+    body{
+        background-image: url("../imagens/back-tv.jpg");
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#printer{display: none;}
+    img#pc{display: none;}
+    img#tv{display:block}
+}
