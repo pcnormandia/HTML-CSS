@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <!--Menu hamburguer: criar um link para o google material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <!--Inserir o icone de menu conforme instruções do google icons e incluir o atributo onclick com uma função que irá realizar a ação de abrir e fechar o menu-->
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 01</a></li>
                 <li><a href="#">Opção 02</a></li>
@@ -28,5 +32,15 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quo aspernatur nisi veritatis unde, optio quam tempora sapiente debitis in repudiandae ad velit fugit nesciunt similique ratione illo. Fuga, sit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis dignissimos voluptates animi saepe cupiditate iste, eius vitae rerum mollitia ratione nemo dolorum, doloremque ad! Atque voluptate optio dolores alias ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis illum laborum ad mollitia ex exercitationem adipisci quibusdam aliquam est, sint tempore saepe expedita laudantium, natus iste, numquam esse. Fugiat, quod?</p>
         </article>
     </main>
+    <!--Inserir um script Javascript com a função criada anteriormente com o algoritmo necessário para executar a ação de abrir e fechar o menu-->
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
